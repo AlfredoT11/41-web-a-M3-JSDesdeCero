@@ -43,6 +43,9 @@ const PI = 3.141592;
 let esMayorDeEdad = true;
 let tieneTerceraEdad = false;
 
-
 // Palabra reservada: Es una palabra especial en el lenguaje de programación que NO puede usarse como
 //  nombre de variables, funciones, clases.
+
+alert(mensajeFinal);
+let nombreMascota = prompt("Escribe el nombre de tu mascota"); // SIEMPRE convierte el valor a una cadena.
+alert("El nombre de la mascota es: " + nombreMascota);
