@@ -49,3 +49,29 @@ let tieneTerceraEdad = false;
 alert(mensajeFinal);
 let nombreMascota = prompt("Escribe el nombre de tu mascota"); // SIEMPRE convierte el valor a una cadena.
 alert("El nombre de la mascota es: " + nombreMascota);
+
+// Comentarios JS <- Los comentarios es texto dentro del código fuente que no se ejecuta.
+// Comentarios de una línea: Se representan con 2 diagonales -> //
+// Comentarios multilínea: Se representan con /* */
+
+/*
+    Este
+    es
+    un
+    comentario
+    multilinea
+*/
+
+// Ejercicio 1:
+// Leer los datos de una mascota e imprimir un mensaje que incluya todos los datos leídos.
+// Utilizar al menos 1 vez cada tipo de dato (String, Number y Boolean).
+
+// Ejercicio 2:
+/*
+    Crear un cuestionario de 10 preguntas. Mostrar cada pregunta una por una y al final mostrar
+    la respectiva pregunta con la respuesta ingresada por el usuario.
+    Que al menos 2 preguntas sean de opción múltiple.
+    Que al menos 2 preguntas sean respuesta de valores numéricos.
+    Cada pregunta debe tener la respuesta en los comentarios del código.
+    Agregar cada respuesta correcta a una variable.
+*/
