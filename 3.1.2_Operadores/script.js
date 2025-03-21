@@ -66,5 +66,60 @@ let variableIgual = 24;
 console.log(variableMayor + " >= " + variableIgual + " -> " + (variableMayor >= variableIgual));
 console.log(variableMayor + " <= " + variableIgual + " -> " + (variableMayor <= variableIgual));
 
+// Operadores lógicos
+// And ( y ) -> &&
+/* 
+    true  && true   -> true
+    true  && false  -> false
+    false && true   -> false
+    false && false  -> false
+*/
+let edad = 24;
+let traeINE = true;
+console.log("edad: " + edad);
+console.log("traeINE: " + traeINE);
+console.log("edad >= 18 && traeINE == true -> ", (edad >= 18 && traeINE == true));
 
+traeINE = false;
+console.log("edad: " + edad);
+console.log("traeINE: " + traeINE);
+console.log("edad >= 18 && traeINE == true -> ", (edad >= 18 && traeINE == true));
+
+
+// Or ( o ) -> || 
+/*
+    true  || true  -> true
+    true  || false -> true
+    false || true  -> true
+    false || false -> false
+*/
+let especieMascota = "perro";
+console.log("especieMascota: " + especieMascota);
+console.log("especieMascota == 'perro' || especieMascota == 'gato' -> ", (especieMascota == 'perro' || especieMascota == 'gato'));
+
+especieMascota = "gato";
+console.log("especieMascota: " + especieMascota);
+console.log("especieMascota == 'perro' || especieMascota == 'gato' -> ", (especieMascota == 'perro' || especieMascota == 'gato'));
+
+especieMascota = "conejo";
+console.log("especieMascota: " + especieMascota);
+console.log("especieMascota == 'perro' || especieMascota == 'gato' -> ", (especieMascota == 'perro' || especieMascota == 'gato'));
+
+
+// Not (negación) -> !
+/*
+    !true  -> false
+    !false -> true
+*/
+
+console.log("!true -> " + !true);
+console.log("!false -> " + !false);
+
+edad = 35;
+console.log("!(edad >= 18) -> " + (!(edad >= 18)));
+
+// Tarea: Investigar la O exclusiva (XOR).
+/*
+
+*/
 
