@@ -29,3 +29,42 @@ variable1 -= 7; // <- esto es igual a escribir variable1 = variable1 - 7;
 console.log(variable1); // Imprime 8
 variable1 *= 2; // <- esto es igual a escribir variable1 = variable1 * 2;
 console.log(variable1); // Imprime 16
+
+// Operador incremento
+let variable2 = 0;
+console.log(variable2);
+variable2++; // esto es igual a escribir variable2 += 1;
+console.log(variable2);
+variable2++;
+console.log(variable2);
+
+// Operador decremento
+let variable3 = 5;
+console.log(variable3);
+variable3--; // esto es igual a escribir variable3 -= 1;
+console.log(variable3);
+variable3--;
+console.log(variable3);
+
+// Operadores de comparación
+console.log("5 == 5 -> " + (5 == 5));
+console.log("5 == '5' -> " + (5 == '5')); // El opereador de igual (==) revisa únicamente el valor.
+console.log("5 === '5' -> " + (5 === '5')); // El operador de igualdad estricto (===) revisa tanto el valor como el tipo de dato.
+
+console.log("18 != 17 -> " + (18 != 17)); // true
+console.log("18 != '18' -> " + (18 != '18')); // false -> El número 18 es igual que la cadena '18'
+console.log("18 !== '18' -> " + (18 !== '18')); // true -> El número 18 es estrictamente diferente que la cadena '18'.
+
+
+
+let variableMayor = 24;
+let variableMenor = -1;
+console.log(variableMayor + " > " + variableMenor + " -> " + (variableMayor > variableMenor));
+console.log(variableMayor + " < " + variableMenor + " -> " + (variableMayor < variableMenor));
+
+let variableIgual = 24;
+console.log(variableMayor + " >= " + variableIgual + " -> " + (variableMayor >= variableIgual));
+console.log(variableMayor + " <= " + variableIgual + " -> " + (variableMayor <= variableIgual));
+
+
+
