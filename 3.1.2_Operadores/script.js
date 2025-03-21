@@ -78,12 +78,12 @@ let edad = 24;
 let traeINE = true;
 console.log("edad: " + edad);
 console.log("traeINE: " + traeINE);
-console.log("edad >= 18 && traeINE == true -> ", (edad >= 18 && traeINE == true));
+console.log("edad >= 18 && traeINE == true -> " + (edad >= 18 && traeINE == true));
 
 traeINE = false;
 console.log("edad: " + edad);
 console.log("traeINE: " + traeINE);
-console.log("edad >= 18 && traeINE == true -> ", (edad >= 18 && traeINE == true));
+console.log("edad >= 18 && traeINE == true -> " + (edad >= 18 && traeINE == true));
 
 
 // Or ( o ) -> || 
@@ -95,15 +95,15 @@ console.log("edad >= 18 && traeINE == true -> ", (edad >= 18 && traeINE == true)
 */
 let especieMascota = "perro";
 console.log("especieMascota: " + especieMascota);
-console.log("especieMascota == 'perro' || especieMascota == 'gato' -> ", (especieMascota == 'perro' || especieMascota == 'gato'));
+console.log("especieMascota == 'perro' || especieMascota == 'gato' -> " + (especieMascota == 'perro' || especieMascota == 'gato'));
 
 especieMascota = "gato";
 console.log("especieMascota: " + especieMascota);
-console.log("especieMascota == 'perro' || especieMascota == 'gato' -> ", (especieMascota == 'perro' || especieMascota == 'gato'));
+console.log("especieMascota == 'perro' || especieMascota == 'gato' -> " + (especieMascota == 'perro' || especieMascota == 'gato'));
 
 especieMascota = "conejo";
 console.log("especieMascota: " + especieMascota);
-console.log("especieMascota == 'perro' || especieMascota == 'gato' -> ", (especieMascota == 'perro' || especieMascota == 'gato'));
+console.log("especieMascota == 'perro' || especieMascota == 'gato' -> " + (especieMascota == 'perro' || especieMascota == 'gato'));
 
 
 // Not (negación) -> !
