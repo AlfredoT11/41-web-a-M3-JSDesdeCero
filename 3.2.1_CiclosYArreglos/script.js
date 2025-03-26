@@ -110,5 +110,28 @@ console.log(frutas);
 //     0        1        2          3
 // ['Uva', 'Fresa', 'Mango', 'Manzana']
 console.log(frutas.slice(1, 3)); // Nos permite acceder a un subarreglo.
+                 
+//                  0                                                         16
+let numerosAzar = [1, 3, 4, 5, 7, 8, 9, 10, 11, 15, 64, 100, 87, 71, 65, 89, 10]; // 17 valores
+// numerosPares.length; // Me permite conocer cuántos valores hay en el arreglo.
 
+let pares = [];
+let impares = [];
 
+// Para cada valor del arreglo, mostrar un mensaje indicando si el número es par o impar.
+// % -> El módulo nos permitirá saber si el valor es par o impar.
+for(let i = 0; i < numerosAzar.length; i++){
+    if(numerosAzar[i] % 2 == 0){
+        console.log(numerosAzar[i] + " es PAR");
+        pares.push(numerosAzar[i]);
+    }else{
+        console.log(numerosAzar[i] + " es IMPAR");
+        impares.push(numerosAzar[i]);
+    }
+}
+
+console.log("Pares: ");
+console.log(pares);
+
+console.log("Impares: ");
+console.log(impares);
