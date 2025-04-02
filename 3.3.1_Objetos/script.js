@@ -164,4 +164,19 @@ for(let v of [10, 9, 8, 10, 14]){
     console.log(v);
 }
 
+/*
+    Ejercicios complementarios:
 
+    Fácil
+    - Crear un objeto llamado ListaLibros que permita almacenar dentro de él más de un Libro.
+    - Agregar un método a ListaLibros para agregar un nuevo libro.
+    - Agregar un método a ListaLibros para verificar si hay un libro a partir de un nombre especificado.
+
+    Medio
+    - Agregar un método a ListaLibros que regrese un arreglo de libros que contenga todos los libros de un autor en específico.
+    - Crear un método que permita mostrar todos los libros en una ListaLibros.
+
+    Difícil
+    - Agregar un método a ListaLibros para eliminar un libro a partir de su nombre.
+
+*/
