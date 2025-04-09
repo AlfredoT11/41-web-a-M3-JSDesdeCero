@@ -24,7 +24,8 @@ function agregarTarea(){
 
     // Para eliminar un elemento podemos utilizar removeChild aplicado al papá de ese elemento.
     let mensajeErrorH2 = document.getElementById("mensajeError");
-    document.body.removeChild(mensajeErrorH2);
+    document.body.removeChild(mensajeErrorH2); // En este caso el elemento que quiero borrar es hijo del body.
+    // document.body es un atajo para acceder al elemento <body>
 }
 
 let agregarTareaBtn = document.getElementById("agregarTareaBtn"); // Buscando un elemento por su id.
