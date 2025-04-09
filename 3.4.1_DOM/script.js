@@ -4,7 +4,8 @@ function agregarTarea(){
     let agregarTareaInput = document.getElementById("agregarTareaInput");
 
     if(agregarTareaInput.value === ""){
-        alert("El campo de tarea está vacío. Por favor agrega una tarea");
+        //alert("El campo de tarea está vacío. Por favor agrega una tarea");
+        document.getElementById("mensajesAplicacion").innerText = "El campo de tarea está vacío. Por favor agrega una tarea"
         return;
     }
 
@@ -19,6 +20,7 @@ function agregarTarea(){
     listaTareasUl.appendChild(nuevoLi);
 
     agregarTareaInput.value = "";
+    document.getElementById("mensajesAplicacion").innerText = "";
 }
 
 let agregarTareaBtn = document.getElementById("agregarTareaBtn"); // Buscando un elemento por su id.
