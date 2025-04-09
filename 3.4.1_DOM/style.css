@@ -1,0 +1,7 @@
+li > p{
+    color: red;
+}
+
+.li-class > p{
+    color: blue;
+}
