@@ -21,6 +21,10 @@ function agregarTarea(){
 
     agregarTareaInput.value = "";
     document.getElementById("mensajesAplicacion").innerText = "";
+
+    // Para eliminar un elemento podemos utilizar removeChild aplicado al papá de ese elemento.
+    let mensajeErrorH2 = document.getElementById("mensajeError");
+    document.body.removeChild(mensajeErrorH2);
 }
 
 let agregarTareaBtn = document.getElementById("agregarTareaBtn"); // Buscando un elemento por su id.
