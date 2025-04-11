@@ -101,9 +101,7 @@ function subtituloYParrafo(subtitulo, texto){
 
     nuevoDiv.innerHTML = `<h2> ${subtitulo} </h2>` + 
                          `<p> ${texto} </p>`;
-
     return nuevoDiv;
-
     //let pPrueba = document.querySelector("#prueba > p"); // querySelector nos permite buscar un elemento a través de selectores de css.
     //pPrueba.innerHTML = "<b>Modificando el texto del párrafo</b>";
 }
@@ -124,4 +122,13 @@ document.body.appendChild(subtituloYParrafo("Título 4", "Este es un texto de pr
 document.body.appendChild(subtituloYParrafo("Título 5", "Este es un texto de prueba 5"));
 document.body.appendChild(subtituloYParrafo("Título 6", "Este es un texto de prueba 7"));
 
+console.log(document.getElementsByTagName("h2"));
+console.log(document.getElementsByClassName("h2-azul"));
+
+let elementosConClaseH2Azul = document.getElementsByClassName("h2-azul");
+for(let i = 0; i < elementosConClaseH2Azul.length; i++){
+    //elementosConClaseH2Azul[i].style = "background-color: yellow;"
+    //elementosConClaseH2Azul[i].style.backgroundColor = "green";
+    elementosConClaseH2Azul[i].classList.add("fondo-rosa");
+}
 

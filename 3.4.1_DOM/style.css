@@ -5,3 +5,11 @@ li > p{
 .li-class > p{
     color: blue;
 }
+
+.h2-azul{
+    color: blue;
+}
+
+.fondo-rosa{
+    background-color: pink;
+}
