@@ -91,3 +91,37 @@ let funcionSuma = (a, b) => {
 }
 funcionSuma(5, 1);
 
+// Componentes -> Es un "building block" (bloque de construcción) para interfaces gráficas.
+function subtituloYParrafo(subtitulo, texto){
+    let nuevoDiv = document.createElement("div");
+    /*
+    nuevoDiv.innerHTML = "<h2>" + subtitulo + "</h2>" +
+                         "<p>" + texto + "</p>";
+    */
+
+    nuevoDiv.innerHTML = `<h2> ${subtitulo} </h2>` + 
+                         `<p> ${texto} </p>`;
+
+    return nuevoDiv;
+
+    //let pPrueba = document.querySelector("#prueba > p"); // querySelector nos permite buscar un elemento a través de selectores de css.
+    //pPrueba.innerHTML = "<b>Modificando el texto del párrafo</b>";
+}
+
+// Template string -> Es una manera de crear una cadena compuesta de constantes (texto) y expresiones de JS.
+/*
+    ` <- backticks <- alt + 96 
+            altgr + } (dos veces)
+            ctrl + alt + tecla }
+*/
+
+
+
+document.body.appendChild(subtituloYParrafo("Título 1", "Este es un texto de prueba"));
+document.body.appendChild(subtituloYParrafo("Título 2", "Este es un texto de prueba 2"));
+document.body.appendChild(subtituloYParrafo("Título 3", "Este es un texto de prueba 3"));
+document.body.appendChild(subtituloYParrafo("Título 4", "Este es un texto de prueba 4"));
+document.body.appendChild(subtituloYParrafo("Título 5", "Este es un texto de prueba 5"));
+document.body.appendChild(subtituloYParrafo("Título 6", "Este es un texto de prueba 7"));
+
+
