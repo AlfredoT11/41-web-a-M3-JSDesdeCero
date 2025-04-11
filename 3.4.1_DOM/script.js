@@ -1,3 +1,17 @@
+// DOM: Document Object Model
+/*
+    Model -> Representación de algo.
+    DOM es la representación de una página HTML para JS.
+    Esta representación es a través de una estructura conocida como árbol.
+    El árbol se compone de elementos conocidos como 'nodos', los cuales representan
+    un elemento de HTML.
+
+                            <html>
+                <head>                      <body>
+        <meta>  <title> <link>          <h2>    <p>     <ul>
+                                                    <li>    <li>    <li>    <li>
+*/
+
 function agregarTarea(){
 
     // Accediendo al elemento input.
@@ -14,7 +28,21 @@ function agregarTarea(){
 
     // Creando un nuevo elemento.
     let nuevoLi = document.createElement("li");
-    nuevoLi.innerText = agregarTareaInput.value; // El atributo value me permite acceder a lo que está escrito en el input.
+    // Crear el párrafo
+    let parrafoNuevo = document.createElement("p");
+    parrafoNuevo.innerText = agregarTareaInput.value; // El atributo value me permite acceder a lo que está escrito en el input.
+    nuevoLi.appendChild(parrafoNuevo);
+
+    // Crear un botón nuevo
+    let botonEliminar = document.createElement("button");
+    botonEliminar.innerText = "Eliminar";
+
+    botonEliminar.addEventListener("click", () => {
+        //listaTareasUl.removeChild(nuevoLi); // removeChild() elimina un hijo de un elemento padre.
+        nuevoLi.remove(); // remove() se elimina asimismo.
+    });
+
+    parrafoNuevo.appendChild(botonEliminar);
 
     // Una vez creado el elemento, se debe agregar a otro elemento.
     listaTareasUl.appendChild(nuevoLi);
@@ -41,4 +69,25 @@ let agregarTareaBtn = document.getElementById("agregarTareaBtn"); // Buscando un
 agregarTareaBtn.addEventListener("click", agregarTarea); 
 
 // NOTA: Cuando trabajamos con addEventListener, los eventos NO deben llevar la palabra "on" al inicio.
+
+
+// Función -> Un bloque de código reutilizable.
+function suma(a, b){
+    return a + b;
+}
+suma(5, 1);
+
+// Funciones anónimas: Funciones que no tienen nombre.
+// En JS se les conoce como funciones flecha.
+// La idea de estas funciones es que solamente se utilicen una vez dentro de nuestro código.
+/*
+    (param1, param2, param3, ..., paramN) => {
+        // Código a ejecutar.
+    }
+*/
+
+let funcionSuma = (a, b) => {
+    return a + b;
+}
+funcionSuma(5, 1);
 
