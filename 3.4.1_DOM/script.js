@@ -132,3 +132,16 @@ for(let i = 0; i < elementosConClaseH2Azul.length; i++){
     elementosConClaseH2Azul[i].classList.add("fondo-rosa");
 }
 
+/*
+    Cómo nombrar cosas en programación
+
+    Existen varias formas de darle nombre a las cosas en programación:
+    - camelCase  -> La primer letra de la primer palabra en minúscula, si hay más de una palabra, la primera letra de esas palabras van en mayúscula.
+    - PascalCase -> La primer letra de la primer palabra en mayúscula, si hay más de una palabra, la primera letra de esas palabras van en mayúscula.
+    - snake_case -> Todas las letras van en minúscula y cada palabra se separa con guión bajo.
+
+    camelCase  -> variables y funciones (JS).
+    PascalCase -> Clases (JS).
+    snake_case -> Esta se utiliza en un lenguaje de programación llamado Python.
+*/
+
