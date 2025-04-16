@@ -1,0 +1,11 @@
+.yellow-text{
+    color: yellow;
+}
+
+.yellow-text > span{
+   color: red; 
+}
+
+.background-green{
+    background-color: green;
+}
